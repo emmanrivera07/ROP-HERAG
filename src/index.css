@@ -1,0 +1,263 @@
+.contenedor-app {
+    display: flex;
+    min-height: 100vh;
+
+
+    
+}
+
+aside {
+    background-color: var(--blanco);
+    flex: 0 0 150px;
+}
+.seccion-principal {
+    flex: 1;
+}
+
+  .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .form-usuario {
+    
+    height: 100vh;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-login {
+  background-color: var(--gris2);
+  height: 100vh;
+  background-image: url('./assets//img/Nuevousuario.png');
+  background-size: cover;
+}
+
+.contenedor-form {
+    padding: 5rem 3rem;
+    max-width: 500px;
+    width: 95%;
+    background-color: var(--blanco);
+    border-radius: 1rem;
+}
+
+.campo-form {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.campo-form:last-of-type {
+  margin: 0;
+}
+.campo-form label {
+  flex: 0 0 100px;
+  font-family: var(--textFont);
+}
+.campo-form input[type="password"],
+.campo-form input[type="email"], 
+.campo-form input[type="text"] {
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
+  flex: 1;
+}
+.sombra {
+  -webkit-box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
+  -moz-box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
+  box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
+}
+.sombra-dark {
+  -webkit-box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
+  -moz-box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
+  box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
+}
+.formulario {
+  background-color: var(--gris3);
+  padding: 4rem;
+}
+.formulario form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contenedor-input {
+  display: flex;
+}
+.contenedor-input label {
+  margin-bottom: 1rem;
+  color: var(--blanco);
+}
+.input-text {
+  padding: 1rem;
+  border: none;
+  border-radius: .5rem;
+  flex: 1;
+  width: 100%;
+}
+
+h1, h2 {
+  font-family: var(--headingFont);
+  font-weight: 900;
+  margin: 0 0 4rem 0;
+  text-align: center;
+  color: var(--gris2);
+}
+h1 span {
+  font-weight: 400;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--gris2);
+}
+
+/** BOTONES **/
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-primario {
+    background-color: var(--gris2);
+    color: var(--blanco);
+}
+
+.btn {
+    margin-top: 2rem;
+    font-family: var(--headingFont);
+    padding: 1.5rem;
+    font-size: 1.4;
+    font-weight: 400;
+    border-radius: .5rem;
+    border: none;
+    transition: background-color .3s ease;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+input[type="submit" i] {
+    appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark(black, white);
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+user agent stylesheet
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 2px;
+}
+
+body {
+    min-height: 100%;
+    background-color: var(--gris1);
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: var(--textFont);
+}
+
+:root {
+    --blanco: #ffffff;
+    --gris1: #edf2f6;
+    --gris2: #2f3848;
+    --gris3: #1a202d;
+    --negro: #000000;
+    --headingFont: 'Raleway', sans-serif;
+    --textFont: 'Roboto', sans-serif;
+}
+
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 75%;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.contenedor-tareas{
+  background-image: url('./assets//img/Nuevousuario.png');
+  background-size: cover;
+}
